@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.tooltip.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .slider::-webkit-slider-thumb {
+    position:relative;
+    z-index:1;
+    appearance: none;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background-color: gray;
+    cursor:pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    transition: all 100ms ease-in;
+}
+
+.slider::-webkit-slider-thumb:hover{
+    outline: 2px solid var(--vb-yellow);
+    background-color: darkred;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.8);
+}
